@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine</title>
+<style>
+    body {
+        background-color: black;
+        background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+
+    #container {
+        width: 50vw;
+        padding: 12px 15px;
+        color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(49, 47, 47);
+        border-radius: 5px;
+        box-shadow: 3px 3px 15px 4px black;
+    }
+    #btn {
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 10px;
+        display: none;
+        width: 40%;
+        box-shadow: 3px 3px 15px 3px white;
+    }
+    #container a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+    
+
+    #container button:hover {
+        background-color: rgb(176, 174, 174);
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    #demo-div {
+        padding: 20px;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        display: none;
+    }
+
+    #demo-div h1, h3{
+        text-align: center;
+    }
+</style>
+<body>
+
+
+    <div id="container">
+        <p id="demo1">
+            <h1> Thank you for accepting my proposal :)</h1>
+        </p>
+        <p id="demo2"> You are very lucky for having me </p>
+        <p id="demo3"> Let's talks me </p>
+        <div id="demo-div"></div>
+        <button id="btn" style="display: block;">
+        <a href="contactus .html" > DM US - & SEE THE MAGIC </a>
+    </button>
+    </div>
+    <script>
+        
+        let ask = confirm("Will you be my valentine?? ");
+        for (let i = 0; i < 3; i++) {
+            if (ask == true) {
+                document.getElementById("demo1").innerHTML = `<h1>Thank you for accepting my proposal :)</h1>`;
+                document.getElementById("demo2").innerHTML = `You are very lucky for having me`;
+                document.getElementById("demo3").innerHTML = `Now let's talk`;
+                document.getElementById("btn").style.display = "block";
+                break;
+            }
+            else {
+                if (i == 0) {
+                    ask = confirm("Pakka nahi banogi??");
+                }
+                else if (i == 1) {
+                    ask = confirm("Soch lo :-");
+                }
+                else {
+                    ask = confirm("Ban jao please :( ");
+                }
+            }
+            if (ask == true) {
+                document.getElementById("demo1").innerHTML = `<h1>Thank you for accepting my proposal :)</h1>`;
+                document.getElementById("demo2").innerHTML = `You are very lucky for having me`;
+                document.getElementById("demo3").innerHTML = `Now let's talk`;
+                document.getElementById("btn").style.display = "block";
+                break;
+            }
+        }
+        if (ask == false) {
+            
+            document.getElementById("demo-div").style.display = "block";
+            document.getElementById("demo-div").innerHTML = `<h3>You will regret later</h3> <h1>Go to Hell and go and find where is the <b>HELL</b> !!!!</h1>`;
+            document.getElementById("container").style.display = "block";
+        }
+
+
+   
+    </script>
+</body>
+</html>

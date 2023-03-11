@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US </title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            padding: 20px;
+        }
+
+        .members,
+        #cont-head {
+            background-color: rgb(62, 61, 61);
+            width: 80%;
+            margin: 5px auto;
+            padding: 30px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: white;
+            text-shadow: 3px 3px 20px black;
+        }
+        .members img{
+            box-shadow: 3px 3px 15px 5px black;
+        }
+        .members:hover {
+            cursor: pointer;
+            background-color: rgb(93, 90, 90);
+            transition: background-color 0.6s ease-in-out;
+            transform: scale(1.01);
+            transition: transform 0.5s ease-in-out;
+            box-shadow: 2px 2px 15px 3px rgb(104, 102, 102);
+        }
+
+        .members img {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+        }
+
+        #img-insta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #img-insta img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #img-insta a {
+            text-decoration: none;
+        }
+
+        #img-insta p {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            margin: 10px 0px;
+            background-color: rgb(32, 31, 31);
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #cont-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer{
+            background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            color: white;
+            padding: 20px;
+            box-shadow: -3px -3px 15px 5px black;
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer button{
+            padding: 8px 12px;
+            font-weight: 700;
+            border-radius: 3px;
+            background-color: black;
+        }
+        .footer button:hover{
+            background-color: rgb(50, 48, 48);
+            transition: background-color 0.5s ease-in-out;
+            box-shadow: 3px 3px 15px 4px black;
+            cursor: pointer;
+        }
+        .footer a{
+            text-decoration: none;
+            color: white;
+        }
+        @media only screen and (max-width: 800px) {
+            .members{
+                flex-direction: column;
+                text-align: center;
+                font-size: 14px;
+            }
+            .members h1{
+                margin: 10px 0px;
+            }
+            #img-insta img{
+                display: none;
+            }
+            #cont-head{
+                font-size: 16px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="cont-head"> We are members of FOOOKIN IIITANS !!! </h1>
+        <div class="members">
+            <img src="./mr.godara.jpg"  alt="Amit">
+            <h1> Amit Godara </h1>
+            <div id="img-insta">
+                <a target="_blank" href="https://www.instagram.com/mr.godara_rj05_jaat/">
+                    <img src="https://www.eckxstudio.com/wp-content/uploads/2020/05/insta_logo_png-e1589911682726.png"  alt="Insta">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/mr.godara_rj05_jaat/">
+                    <p>Mr.godara</p>
+                </a>
+            </div>
+        </div>
+        <div class="members">
+            <img src="./_abbhay09-20230213-0001.jpg"  alt="Abhay">
+            <h1> Abhay Saini </h1>
+            <div id="img-insta">
+                <a target="_blank" href="https://www.instagram.com/_abbhay09/">
+                    <img src="https://www.eckxstudio.com/wp-content/uploads/2020/05/insta_logo_png-e1589911682726.png"  alt="Insta">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/_abbhay09/">
+                    <p>Toxic</p>
+                </a>
+            </div>
+        </div>
+        <div class="members">
+            <img src="./vinod24____-20230214-0001.jpg"  alt="Vinod">
+            <h1> Vinod kumar </h1>
+            <div id="img-insta">
+                <a target="_blank" href="https://www.instagram.com/vinod24____/">
+                    <img src="https://www.eckxstudio.com/wp-content/uploads/2020/05/insta_logo_png-e1589911682726.png"  alt="Insta">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/vinod24____/">
+                    <p>Vinod kumar</p>
+                </a>
+            </div>
+        </div>
+        <div class="members">
+            <img src="./_mr._mehr.a_-20230214-0001.jpg"  alt="Ayush">
+            <h1> Ayush Mehra </h1>
+            <div id="img-insta">
+                <a target="_blank" href="https://www.instagram.com/_mr._mehr.a_/">
+                    <img src="https://www.eckxstudio.com/wp-content/uploads/2020/05/insta_logo_png-e1589911682726.png"  alt="Insta">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/_mr._mehr.a_/">
+                    <p>Ayush</p>
+                </a>
+            </div>
+        </div>
+        <div class="members">
+            <img src="nithin.jpg"  alt="Nithin">
+            <h1>Lover Boy Nithin</h1>
+            <div id="img-insta">
+                <a target="_blank" href="https://www.instagram.com/__mr_nithin__01/">
+                    <img src="https://www.eckxstudio.com/wp-content/uploads/2020/05/insta_logo_png-e1589911682726.png"  alt="Insta">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/__mr_nithin__01/">
+                    <p>Nithin </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <button>
+                <a href="index.html"> Go Back </a>
+            </button>
+        </div>
+    </footer>
+    <script></script>
+</body>
+</html>
